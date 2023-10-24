@@ -13,6 +13,8 @@
 		1AB7D05E2AE6904500948705 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB7D05C2AE6904500948705 /* Main.storyboard */; };
 		1AB7D0602AE6904700948705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB7D05F2AE6904700948705 /* Assets.xcassets */; };
 		1AB7D0632AE6904700948705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB7D0612AE6904700948705 /* LaunchScreen.storyboard */; };
+		1AB7D06E2AE694A200948705 /* AppearenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7D06D2AE694A200948705 /* AppearenceViewController.swift */; };
+		1AB7D0702AE694D200948705 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7D06F2AE694D200948705 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1AB7D05F2AE6904700948705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AB7D0622AE6904700948705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1AB7D0642AE6904700948705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB7D06D2AE694A200948705 /* AppearenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearenceViewController.swift; sourceTree = "<group>"; };
+		1AB7D06F2AE694D200948705 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		1AB7D0552AE6904500948705 /* CalendarDayFinderApp */ = {
 			isa = PBXGroup;
 			children = (
-				1AB7D0562AE6904500948705 /* AppDelegate.swift */,
-				1AB7D0582AE6904500948705 /* SceneDelegate.swift */,
-				1AB7D05A2AE6904500948705 /* ViewController.swift */,
-				1AB7D05C2AE6904500948705 /* Main.storyboard */,
+				1AB7D06C2AE6907B00948705 /* AppDelegate */,
+				1AB7D06A2AE6905D00948705 /* Controller */,
+				1AB7D06B2AE6906E00948705 /* Views */,
 				1AB7D05F2AE6904700948705 /* Assets.xcassets */,
-				1AB7D0612AE6904700948705 /* LaunchScreen.storyboard */,
 				1AB7D0642AE6904700948705 /* Info.plist */,
 			);
 			path = CalendarDayFinderApp;
+			sourceTree = "<group>";
+		};
+		1AB7D06A2AE6905D00948705 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1AB7D05A2AE6904500948705 /* ViewController.swift */,
+				1AB7D06D2AE694A200948705 /* AppearenceViewController.swift */,
+				1AB7D06F2AE694D200948705 /* InfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1AB7D06B2AE6906E00948705 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1AB7D05C2AE6904500948705 /* Main.storyboard */,
+				1AB7D0612AE6904700948705 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1AB7D06C2AE6907B00948705 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1AB7D0562AE6904500948705 /* AppDelegate.swift */,
+				1AB7D0582AE6904500948705 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB7D06E2AE694A200948705 /* AppearenceViewController.swift in Sources */,
 				1AB7D05B2AE6904500948705 /* ViewController.swift in Sources */,
 				1AB7D0572AE6904500948705 /* AppDelegate.swift in Sources */,
 				1AB7D0592AE6904500948705 /* SceneDelegate.swift in Sources */,
+				1AB7D0702AE694D200948705 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
